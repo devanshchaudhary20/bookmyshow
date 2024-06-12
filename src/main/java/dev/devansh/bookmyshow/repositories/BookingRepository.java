@@ -8,5 +8,5 @@ import org.springframework.stereotype.Repository;
 public interface BookingRepository extends JpaRepository<Booking, Long> {
 
     @Override
-    Booking save(Booking entity);
+    Booking save(Booking booking);
 }

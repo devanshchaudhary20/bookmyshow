@@ -13,5 +13,5 @@ public interface ShowSeatRepository extends JpaRepository<ShowSeat, Long> {
     List<ShowSeat> findAllById(Iterable<Long> longs);
 
     @Override
-    ShowSeat save(ShowSeat entity); //Update if passed ShowSeat entity has an id, else insert/create
+    ShowSeat save(ShowSeat showSeat); //Update if passed ShowSeat entity has an id, else insert/create
 }
